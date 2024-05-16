@@ -1,0 +1,4 @@
+---
+AS: 100
+neighbor: 10.1.1.1
+neighbor_as: 200

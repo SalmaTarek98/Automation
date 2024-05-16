@@ -1,0 +1,5 @@
+---
+router_id: 11.1.1.1
+area: 0
+network: 10.1.1.0
+wmask: 0.0.0.255

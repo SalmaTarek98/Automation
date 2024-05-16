@@ -1,0 +1,4 @@
+---
+ip: 192.168.2.0
+subnet: 255.255.255.0
+interface: fastethernet0/0
