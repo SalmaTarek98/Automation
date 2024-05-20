@@ -13,7 +13,7 @@ greeting = f"""*****************************************************************
                       **********************
 ********** Welcome to THE BEST NETWORK AUTOMATION program ***********
            ********** This Lozy here to help you **********
-                Today is {datetime.day}/{datetime.month}/{datetime.year}
+                Today is {{datetime.day}}/{{datetime.month}}/{{datetime.year}}
                      let's start our journey ^___^ 
 *******************************************************************************
          ****************************************************
@@ -59,7 +59,7 @@ else:
 
 # SSH using Netmiko
 if config:
-    vxr = ConnectHandler(host="192.168.240.47", username="router1", password="router1@nti", device_type="cisco_ios")
+    vxr = ConnectHandler(host="192.168.240.127", username="router1", password="router1@nti", device_type="cisco_ios")
     vxr.enable()
     vxr.send_command_timing("conf t")
     show = vxr.send_command_timing(config)
